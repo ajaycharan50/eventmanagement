@@ -1,0 +1,60 @@
+.hero {
+    background: url('/assets/images/hero-bg.jpg') no-repeat center center; /* Ensure the path is correct */
+    background-size: cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* For adding overlay */
+    overflow: hidden; /* To contain the animated gradient */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    animation: fadeIn 2s ease-in-out; /* Fade-in effect for the heading */
+}
+
+.cta-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+    animation: bounceIn 1s ease-in-out; /* Button bounce-in effect */
+}
+
+/* Button hover effect */
+.cta-button:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for bounce-in effect */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,29 @@
+.search-bar {
+    display: flex;
+    justify-content: flex-end; /* Align the search bar to the right */
+    margin: 20px; /* Add some margin around the search bar */
+}
+
+.search-bar input {
+    width: 250px; /* Default width for the search bar */
+    padding: 10px; /* Padding for input */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: width 0.4s ease, box-shadow 0.4s ease; /* Smooth transition */
+    font-size: 16px; /* Font size */
+}
+
+/* Minimize effect on hover */
+.search-bar input:hover, 
+.search-bar input:focus {
+    width: 300px; /* Increased width on hover/focus */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover/focus */
+    outline: none; /* Remove outline on focus */
+}
+
+/* Placeholder styling */
+.search-bar input::placeholder {
+    color: #aaa; /* Placeholder color */
+    opacity: 1; /* Ensure the placeholder is fully opaque */
+}

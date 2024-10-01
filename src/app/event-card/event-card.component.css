@@ -1,0 +1,44 @@
+.event-cards-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-around; /* Space out the cards evenly */
+    margin: 20px; /* Margin around the container */
+}
+
+.event-card {
+    background-color: #ffffff; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 10px; /* Space between cards */
+    padding: 15px; /* Padding inside each card */
+    text-align: center; /* Center text alignment */
+    width: 250px; /* Fixed width for cards */
+    transition: transform 0.3s; /* Smooth transform effect */
+}
+
+.event-card img {
+    width: 100%; /* Full width for images */
+    height: 150px; /* Fixed height for images */
+    border-radius: 10px; /* Match card corners */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.price {
+    font-weight: bold; /* Bold price text */
+    color: #ff5722; /* Price color */
+}
+
+.book-button {
+    background-color: #ff5722; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+.book-button:hover {
+    background-color: #e64a19; /* Darken button on hover */
+    transform: translateY(-2px); /* Lift button effect */
+}

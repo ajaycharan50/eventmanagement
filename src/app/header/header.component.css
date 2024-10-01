@@ -1,0 +1,49 @@
+header {
+    background: #282c34; /* Dark background for the header */
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px; /* Add some horizontal padding */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Add some padding for better click area */
+    transition: background-color 0.3s; /* Smooth background transition */
+  }
+  
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    border-radius: 5px; /* Rounded corners for hover effect */
+  }
+  
+  .sign-in {
+    background-color: #ff5722; /* Different color for Sign In button */
+    border-radius: 5px;
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  .sign-in:hover {
+    background-color: #e64a19; /* Darker shade for Sign In hover */
+  }
+  
